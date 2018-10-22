@@ -1,0 +1,30 @@
+@import '../config/config';
+
+.logo
+{
+	display: block;
+}
+
+.logo h1
+{
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+.logo h1 a,
+.logo h1 a img
+{
+	display: block;
+	height: inherit;
+	width: inherit;
+}
+
+@include xl
+{
+	.logo h1
+	{
+		height: 1.5*$lh;
+		width: auto;
+	}
+}

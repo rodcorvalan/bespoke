@@ -1,0 +1,58 @@
+@mixin placeholder
+{
+
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  @content;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  @content;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  @content;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  @content;
+	}
+
+}
+
+@mixin remove_highlight_click()
+{
+	outline-style:none;
+	user-select: none;
+	-webkit-tap-highlight-color:transparent;
+	*
+	{
+		outline-style:none;
+		user-select: none;
+		-webkit-tap-highlight-color:transparent;
+	}
+}
+
+@mixin image_overflow_center($height)
+{
+	display: block;
+	height: $height;
+	width: 100%;
+	overflow: hidden;
+	& .inner {
+		display: inline-block;
+		height: inherit;
+		position: relative;
+		right: -50%;
+	}
+	& .inner img {
+		height: inherit;
+		left: -50%;
+		position: relative;
+	}
+}
+
+@mixin shine
+{
+
+	  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.4) 30%, #000 50%, rgba(0,0,0,.4) 70%);
+	  -webkit-mask-size: 200%;
+	  animation: shine 2s infinite;
+
+}

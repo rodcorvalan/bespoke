@@ -1,0 +1,26 @@
+@import '../config/config';
+
+html, body
+{
+	font-weight: 300;
+	font-family: $ff1;
+}
+
+body
+{
+	line-height: 1*$lh;
+	min-width: 320px;
+}
+
+a
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+pre
+{
+	background: #fff;
+	color: #000;
+	font-family: monospace;
+}

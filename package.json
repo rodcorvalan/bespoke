@@ -13,10 +13,9 @@
     "gulp-iconfont": "^10.0.2",
     "gulp-iconfont-css": "^2.3.0",
     "gulp-pleeease": "^2.0.2",
-    "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-watch": "^5.0.1"
+    "node-sass": "^4.9.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

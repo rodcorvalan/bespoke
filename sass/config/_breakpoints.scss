@@ -1,0 +1,21 @@
+// Min Width
+$min_width: 320px !default;
+
+// Breakpoints
+$breakpoint_1: 640px !default;
+$breakpoint_2: 1024px !default;
+$breakpoint_3: 1440px !default;
+
+// Mobile First
+@mixin m() { @media(min-width: $breakpoint_1) { @content } }
+@mixin l() { @media(min-width: $breakpoint_2) { @content } }
+@mixin xl() { @media(min-width: $breakpoint_3) { @content } }
+
+// Only
+@mixin os() { @media(min-width: $breakpoint_1) { @content } }
+@mixin om() { @media(min-width: $breakpoint_1) { @content } }
+@mixin ol() { @media(min-width: $breakpoint_1) { @content } }
+@mixin oxl() { @media(min-width: $breakpoint_1) { @content } }
+
+@mixin osm() { @media(min-width: $breakpoint_1) { @content } }
+@mixin olxl() { @media(min-width: $breakpoint_1) { @content } }

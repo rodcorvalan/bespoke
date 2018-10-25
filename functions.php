@@ -10,5 +10,5 @@ require_once 'functions/posts.php';
 require_once 'functions/favicons.php';
 require_once 'functions/acf.php';
 require_once 'functions/clean-header.php';
-require_once 'functions/disable-json-api.php';
+//require_once 'functions/disable-json-api.php';
 require_once 'functions/social-links.php';

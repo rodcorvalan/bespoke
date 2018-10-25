@@ -1,0 +1,30 @@
+nav.pagination
+{
+	text-align: center;
+}
+
+nav.pagination ul
+{
+	display: inline-block;
+}
+
+nav.pagination ul li
+{
+	float: left;
+}
+
+nav.pagination ul li a,
+nav.pagination ul li span
+{
+	display: block;
+}
+
+nav.pagination ul li span.current
+{
+
+}
+
+nav.pagination ul li a:hover
+{
+	
+}

@@ -1,0 +1,29 @@
+nav.lang-menu
+{
+
+}
+
+nav.lang-menu ul
+{
+	display: inline-block;
+}
+
+nav.lang-menu ul li
+{
+	float: left;
+}
+
+nav.lang-menu ul li a
+{
+	display: block;
+}
+
+nav.lang-menu ul li.current-lang a
+{
+
+}
+
+nav.lang-menu ul li:not(.current-lang) a:hover
+{
+	
+}

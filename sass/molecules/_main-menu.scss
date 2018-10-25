@@ -1,0 +1,29 @@
+nav.main-menu
+{
+
+}
+
+nav.main-menu ul
+{
+	display: inline-block;
+}
+
+nav.main-menu ul li
+{
+	float: left;
+}
+
+nav.main-menu ul li a
+{
+	display: block;
+}
+
+nav.main-menu ul li.current-menu-item a
+{
+	
+}
+
+nav.main-menu ul li:not(.current-menu-item) a:hover
+{
+	
+}

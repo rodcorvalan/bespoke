@@ -12,3 +12,4 @@ require_once 'functions/acf.php';
 require_once 'functions/clean-header.php';
 //require_once 'functions/disable-json-api.php';
 require_once 'functions/social-links.php';
+require_once 'functions/misc.php';

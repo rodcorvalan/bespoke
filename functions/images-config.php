@@ -11,7 +11,10 @@ add_filter('intermediate_image_sizes_advanced', 'armix_remove_image_sizes');
 
 function armix_add_image_sizes()
 {
-	//add_image_size( 'vinos-cover-1', 1024, 364, true );
+	add_image_size( 'post-item-s', 150, 150, true );
+	add_image_size( 'post-item-m', 150, 150, true );
+	add_image_size( 'post-item-l', 150, 150, true );
+	add_image_size( 'post-item-xl', 150, 150, true );
 	add_theme_support( 'post-thumbnails' );
 }
 add_action('init', 'armix_add_image_sizes');

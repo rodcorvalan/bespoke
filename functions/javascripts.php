@@ -1,6 +1,6 @@
 <?php
 
-function add_javascripts() 
+function armix_add_javascripts() 
 {
 
 	// Register Lib	
@@ -21,7 +21,13 @@ function add_javascripts()
 	// Register Theme
 	
 	wp_register_script( 'armix.header', get_template_directory_uri() . '/javascripts/armix.header.js', array( 'jquery' ), false, true );
+
+	// Social Share
+	wp_register_script( 'armix.facebook-api', TDU . '/javascripts/armix.facebook-api.js', array(), false, true );
+	wp_register_script( 'armix.facebook-share', TDU . '/javascripts/armix.facebook-share.js', array('armix.facebook-api','jquery'), false, true );
+	wp_register_script( 'armix.twitter-share', TDU . '/javascripts/armix.twitter-share.js', array('jquery'), false, true );
+	wp_register_script( 'armix.linkedin-share', TDU . '/javascripts/armix.linkedin-share.js', array('jquery'), false, true );
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'add_javascripts' );
+add_action( 'wp_enqueue_scripts', 'armix_add_javascripts' );

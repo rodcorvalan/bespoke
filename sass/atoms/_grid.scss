@@ -20,6 +20,10 @@
 	{
 		width: 1280px;
 	}
+	& > *
+	{
+		grid-column: 1/span 12;
+	}
 }
 
 // Fluid

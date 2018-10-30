@@ -12,14 +12,16 @@
 		</ul>
 	</div>
 	<?php if ( has_post_thumbnail() ) : ?>
-	<a href="<?php the_permalink(); ?>">
-		<picture>
-			<source media="(min-width: 1440px)" srcset="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-item-xl'); ?>">
-			<source media="(min-width: 1024px)" srcset="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-item-l'); ?>">
-			<source media="(min-width: 640px)" srcset="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-item-m'); ?>">
-			<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-item-s'); ?>">
-		</picture>
-	</a>
+	<div class="thumbnail">
+		<a href="<?php the_permalink(); ?>">
+			<picture>
+				<source media="(min-width: 1440px)" srcset="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-item-xl'); ?>">
+				<source media="(min-width: 1024px)" srcset="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-item-l'); ?>">
+				<source media="(min-width: 640px)" srcset="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-item-m'); ?>">
+				<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'post-item-s'); ?>">
+			</picture>
+		</a>
+	</div>
 	<?php endif; ?>
 	<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 	<div class="excerpt"><?php the_excerpt(); ?></div>

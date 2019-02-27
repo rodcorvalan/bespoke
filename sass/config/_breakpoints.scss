@@ -1,21 +1,21 @@
 // Min Width
-$min_width: 320px !default;
+$min-width: 320px;
 
 // Breakpoints
-$breakpoint_1: 640px !default;
-$breakpoint_2: 1024px !default;
-$breakpoint_3: 1440px !default;
-
+$breakpoint-1: 640px;
+$breakpoint-2: 1024px;
+$breakpoint-3: 1440px;
+ 
 // Mobile First
-@mixin m() { @media(min-width: $breakpoint_1) { @content } }
-@mixin l() { @media(min-width: $breakpoint_2) { @content } }
-@mixin xl() { @media(min-width: $breakpoint_3) { @content } }
+@mixin m { @media(min-width: $breakpoint-1) { @content } }
+@mixin l { @media(min-width: $breakpoint-2) { @content } }
+@mixin xl { @media(min-width: $breakpoint-3) { @content } }
 
 // Only
-@mixin os() { @media(min-width: $breakpoint_1) { @content } }
-@mixin om() { @media(min-width: $breakpoint_1) { @content } }
-@mixin ol() { @media(min-width: $breakpoint_1) { @content } }
-@mixin oxl() { @media(min-width: $breakpoint_1) { @content } }
+@mixin os { @media (max-width: $breakpoint-2 - 1) { @content; } }
+@mixin om {	@media (min-width: $breakpoint-1) and (max-width: $breakpoint-2 - 1) { @content; } }
+@mixin ol { @media (min-width: $breakpoint-2) and (max-width: $breakpoint-3 - 1) { @content; } }
+@mixin oxl { @media (min-width: $breakpoint-3) { @content; } }
 
-@mixin osm() { @media(min-width: $breakpoint_1) { @content } }
-@mixin olxl() { @media(min-width: $breakpoint_1) { @content } }
+@mixin osm { @media(max-width: ( $breakpoint-2 - 1 ) ) { @content } }
+@mixin olxl { @media(min-width: $breakpoint-2) { @content } }

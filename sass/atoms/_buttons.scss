@@ -1,6 +1,5 @@
-button,
-input[type="submit"]
+.button
 {
-	background: #fff;
-	border: 1px solid #000;
+	background: $white;
+	border: 1px solid $black;
 }

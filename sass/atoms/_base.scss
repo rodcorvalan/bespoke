@@ -1,9 +1,9 @@
 body
 {
-	line-height: 1*$lh;
-	min-width: $min_width;
 	font-family: $ff1;
 	font-weight: 400;
+	line-height: $lh;
+	min-width: $min-width;
 	overflow-x: hidden;
 }
 
@@ -15,24 +15,7 @@ a
 
 pre
 {
-	background: #fff;
-	color: #000;
+	background: $white;
+	color: $black;
 	font-family: monospace;
-}
-
-@include m {
-	body
-	{
-		background: red;
-	}
-}
-
-.testing
-{
-	font-size: 14px;
-}
-
-.probando
-{
-	font-size: 16px;
 }

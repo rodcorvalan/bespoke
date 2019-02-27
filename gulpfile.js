@@ -5,11 +5,13 @@ const browserSync = require('browser-sync').create();
 const pleeease = require('gulp-pleeease');
 
 
-const armix_browsersync = () => {
+const armix_browsersync = () => 
+{
 	browserSync.init({proxy: 'localhost/colegio',files: 'stylesheets/style.css'});
 }
 
-const armix_sass = () => {
+const armix_sass = () => 
+{
 	return gulp.src('./sass/style.scss')
 			   .pipe(sourcemaps.init())
 			   .pipe(sass().on('error', sass.logError))
@@ -17,11 +19,13 @@ const armix_sass = () => {
 			   .pipe(gulp.dest('./stylesheets/'));
 }
 
-const armix_watch = () => {
+const armix_watch = () => 
+{
 	return gulp.watch('sass/**/*.scss', ['sass']);
 }
 
-const armix_prod = () => {
+const armix_prod = () => 
+{
 	return gulp.src('sass/style.scss')
 			   .pipe(sass().on('error', sass.logError))
 			   .pipe(pleeease())

@@ -1,19 +1,19 @@
 .logo
 {
 	display: block;
-}
 
-.logo h1
-{
-	display: block;
-	height: 1.5*$lh;
-	width: auto;
-}
+	.logo__heading
+	{
+		display: block;
+		height: 1.5*$lh;
+		width: auto;
+	}
 
-.logo h1 a,
-.logo h1 a img
-{
-	display: block;
-	height: inherit;
-	width: inherit;
+	.logo__link,
+	.logo__image
+	{
+		display: block;
+		height: inherit;
+		width: inherit;
+	}
 }

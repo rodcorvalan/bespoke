@@ -51,7 +51,9 @@ rules:
   force-pseudo-nesting: 1
 
   # Name Formats
-  class-name-format: 1
+  class-name-format:
+    - 1
+    - convention: strictbem
   function-name-format: 1
   id-name-format: 0
   mixin-name-format: 1
@@ -65,13 +67,13 @@ rules:
   brace-style:
     - 1
     - style: allman
-    - allowSingleLine: 0
+    - allowSingleLine: 1
   clean-import-paths: 1
   empty-args: 1
   hex-length: 1
   hex-notation: 1
   indentation: 
-    - 1
+    - 0
     - size: tab
   leading-zero: 1
   max-line-length: 0
@@ -93,8 +95,8 @@ rules:
   space-before-bang: 1
   space-after-bang: 1
   space-between-parens: 1
-  space-around-operator: 1
+  space-around-operator: 0
 
   # Final Items
   trailing-semicolon: 1
-  final-newline: 1
+  final-newline: -1

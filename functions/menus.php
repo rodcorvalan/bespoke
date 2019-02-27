@@ -4,7 +4,8 @@
 
 function armix_add_menus()
 {
-	register_nav_menu( 'main_menu', 'Main Menu' );
+    register_nav_menu( 'main_menu', 'Main Menu' );
+	register_nav_menu( 'secondary_menu', 'Secondary Menu' );
 }
 
 add_action( 'init', 'armix_add_menus' );
@@ -36,17 +37,17 @@ class BEMWalkerNavMenu extends Walker_Nav_Menu
     /**
      * @var string
      */
-    protected $subNavClass = 'sub-nav';
+    protected $subNavClass = 'menu__list menu__list--sublevel';
 
     /**
      * @var string
      */
-    protected $subNavItemClass = 'sub-nav__item';
+    protected $subNavItemClass = 'menu__item';
 
     /**
      * @var string
      */
-    protected $subNavLinkClass = 'sub-nav__link';
+    protected $subNavLinkClass = 'menu__link';
 
     public function __construct()
     {
